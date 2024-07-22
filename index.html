@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omakase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="social-media-buttons">
+        <a href="https://wa.me/6591725096" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp">
+        </a>
+        <!--
+        <a href="https://www.facebook.com/airersg/" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+    -->
+        <a href="https://www.instagram.com/wangomakase.sg" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+    </div>
+
+    <div class="download-container">
+        <span class="download-button-container">
+            <a href="https://www.google.com/maps/reserve/v/dine/c/mMPgmEXm3G8?source=pa&opi=89978449&hl=en-SG&gei=ijCeZq_bOvGeseMP3LeD2Aw&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fkgmid%3D%2Fg%2F11y3jphpnx%26hl%3Den-SG%26q%3DWang%2BOmakase%2BSushi%2BBar%26kgs%3D37313cb799d67836%26shndl%3D30%26shem%3Dlsde%2Cvslcca%26source%3Dsh%2Fx%2Floc%2Fosrp%2Fm5%2F1&ihs=4" target="_blank"></a>
+        </span>
+    </div>
+    
+    <div class="container" id="testing">
+        <h1 id="pageTitle">Rate Our Service</h1>
+        <div id="ratings" class="star-rating">
+            <span class="star" onmouseover="highlightStars(1)" onmouseout="resetStars()" onclick="rate(1)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(2)" onmouseout="resetStars()" onclick="rate(2)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(3)" onmouseout="resetStars()" onclick="rate(3)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(4)" onmouseout="resetStars()" onclick="rate(4)">&#9733;</span>
+            <span class="star" onmouseover="highlightStars(5)" onmouseout="resetStars()" onclick="rate(5)">&#9733;</span>
+        </div>
+    </div>
+
+    <div class="form" id="feedback">
+        <div class="mail"></div>
+        <h1>Feedback Form</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" id="feedbackForm">
+            <input type="hidden" name="access_key" value="df839469-7072-4818-8962-4362eb379953">
+            <input type="hidden" name="rating" id="ratingValue" value=""/>
+            <input type="text" name="name" placeholder="Your name" required/>
+            <input type="email" name="email" placeholder="E-mail" required/>
+            <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <div class="submit-container">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contact-us-message" style="display: none; text-align: center; margin-top: 20px;">
+        
+        <h3><a href="https://wa.me/6591725096">Contact Us For Further Assistance</a></h3>
+        <!--
+        <a href="https://wa.me/+6589037025" class="contact-us-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
+            <b>Contact us for more assistance</b>
+        </a>
+    -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
